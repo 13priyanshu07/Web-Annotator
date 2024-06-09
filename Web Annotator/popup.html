@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Annotator</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Webpage Annotator</h1>
+        <div class="group">
+            <label for="color-picker">Highlight Color:</label>
+            <input type="color" id="color-picker" />
+            <button id="save-color">Save Color</button>
+        </div>
+        <div class="group">
+            <button id="clear-highlight">Clear All Highlights</button>
+            <button id="export-button">Export Annotations</button>
+            <p id="message"></p>
+        </div>
+        <div class="group">
+            <label for="search-input">Search Annotations:</label>
+            <input type="text" id="search-input" placeholder="Search..." />
+        </div>
+        <h2>Annotations:</h2>
+        <ul id="annotation-list"></ul>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

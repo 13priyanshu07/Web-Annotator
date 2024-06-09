@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 35em; 
+  max-width: 100%; 
+  margin: 0 auto; 
+}
+
+.group {
+  margin: 1em;
+}
+
+label {
+  display: block;
+  font-size: large;
+}
+
+input[type="color"],
+input[type="text"] {
+  width: 80%; 
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+}
+
+button {
+  padding: 0.5em 1em;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  margin: 0.5em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 90%; 
+  }
+}

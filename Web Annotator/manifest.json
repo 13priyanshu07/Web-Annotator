@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "Webpage Annotator",
+    "version": "1.0",
+    "description": "Highlight text, add notes, and save annotations on webpages.",
+    "permissions": [
+      "storage",
+      "activeTab",
+      "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon_128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    
+    "commands": {
+      "remove-recent-highlight": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+Z"
+        },
+        "description": "Undo"
+      }
+    }
+  }
+  
